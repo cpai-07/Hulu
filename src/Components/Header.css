@@ -1,0 +1,63 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    color: white;
+    overflow-x: scroll;
+    
+}
+
+/* to hide the scrollbar in chrome */
+
+.header::-webkit-scrollbar{
+    display: none;
+}
+/* to hide the scrollbar in edge */
+.header{
+    /* edge */
+    -ms-overflow-style: none; 
+    /* firefox */
+    scrollbar-width: none;
+}
+
+.header_icons{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.header_icon{
+    display: inline-flex;
+    flex-direction: column;
+    width: 100px;
+    cursor: pointer;
+}
+
+.header_icon>.MuiSvgIcon-root{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;  
+}
+
+.header_icon>p{
+    display: none;
+    letter-spacing: 3px;
+    font-size: small;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header_icon_active>p{
+    display: inline-flex !important;
+}
+
+.header_icon:hover>p{
+    display: inline;
+}
+
+.header >img {
+    height: 60px;
+    object-fit: contain;
+}
